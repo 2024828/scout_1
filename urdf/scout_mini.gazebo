@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find scout)/urdf/scout_mini_wheel.gazebo" />
+
+  <!-- Actuator configurations -->
+  <xacro:scout_wheel_transmission wheel_prefix="front_right" />
+  <xacro:scout_wheel_transmission wheel_prefix="front_left" />
+  <xacro:scout_wheel_transmission wheel_prefix="rear_left" />
+  <xacro:scout_wheel_transmission wheel_prefix="rear_right" />
+
+  <!-- Friction settings for GZ Harmonic -->
+  <gazebo>
+    <mu1>1.0</mu1>
+    <mu2>0.9</mu2>
+    <kp>100000.0</kp>
+    <kd>1.0</kd>
+    <fdir1>1 0 0</fdir1>
+    <minDepth>0.001</minDepth>
+    <maxContacts>64</maxContacts>
+  </gazebo>
+
+</robot>
