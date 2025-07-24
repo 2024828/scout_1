@@ -29,4 +29,4 @@ You can use the `2D goal pose` in the RViz2 toolbar to control the robot's movem
 
   https://github.com/agilexrobotics/scout_ros2
 
-  
+  https://github.com/h3ct0r/ugv_gazebo_sim/tree/main
